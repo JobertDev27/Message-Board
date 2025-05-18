@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <%- include("header/header", {link: link}) %>
+    <section class="message-container">
+      <% messages.map((message) => { %> <%- include("messageBox/messageBox",
+      {message: message, link: linkTo}) %> <%}) %>
+    </section>
+  </body>
+</html>
