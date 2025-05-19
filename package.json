@@ -10,7 +10,8 @@
   "type": "module",
   "devDependencies": {},
   "scripts": {
-    "start": "node --watch app.js"
+    "start": "node --watch app.js",
+    "build": "node app.js"
   },
   "author": "",
   "license": "ISC"
